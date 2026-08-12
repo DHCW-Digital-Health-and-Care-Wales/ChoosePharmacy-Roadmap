@@ -235,6 +235,15 @@ export const roadmap: Roadmap = {
       status: 'in-progress',
       outcome:
         'Pharmacy teams can deliver NHS commissioned services safely, consistently and efficiently, contributing to better patient outcomes.',
+      capabilities: {
+        label: 'Included Services',
+        items: [
+          'Clinical Conditions Management (CCM) - This includes the Common Ailments Service (CAS) and Independent Prescribers Service (IPS)',
+          'Emergency Medicines Supply (EMS)',
+          'Contraception Service (CS)',
+          'Discharge Medicines Review (DMR)',
+        ],
+      },
       updated: UPDATED_AT,
     },
     {
