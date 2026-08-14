@@ -273,6 +273,32 @@ export const roadmap: Roadmap = {
       updated: UPDATED_AT,
     },
     {
+      id: 'clinical-coding-snomed-ct',
+      title: localised('Clinical Coding (SNOMED CT)'),
+      summary: localised(
+        'Provide SNOMED CT clinical coding functionality to ensure that all clinical information recorded is standardised.',
+      ),
+      categoryId: CATEGORY_ID,
+      horizon: 'now',
+      status: 'in-progress',
+      outcome:
+        'Recording clinical information using standardised SNOMED CT codes improves data quality, supports safer clinical decision-making, and enables seamless information sharing across NHS Wales services.',
+      updated: UPDATED_AT,
+    },
+    {
+      id: 'medication-coding-dmd',
+      title: localised('Medication Coding (DM+D)'),
+      summary: localised(
+        'Provide Dictionary of Medicines and Devices (DM+D) search functionality, so all medications supplied are coded.',
+      ),
+      categoryId: CATEGORY_ID,
+      horizon: 'now',
+      status: 'in-progress',
+      outcome:
+        'Recording medications using standardised DM+D codes improves medicines safety, supports accurate reimbursement to pharmacies, and enables consistent and reliable sharing of medication information across NHS Wales services.',
+      updated: UPDATED_AT,
+    },
+    {
       id: 'welsh-immunisation-service-wis',
       title: localised('Welsh Immunisation Service (WIS)'),
       summary: localised(
