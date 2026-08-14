@@ -223,16 +223,14 @@ export const roadmap: Roadmap = {
       outcome:
         'Pharmacy teams will have access to a single, consolidated view of key patient information to support safe, informed clinical decision-making.',
       capabilities: {
-        label: 'Included Services',
+        label: 'Included Information',
         items: [
-          'Clinical Conditions Management (CCM)',
-          '   Common Ailments Service (CAS)',
-          '      Sore Throat Test and Treat (STTT)',
-          '      Urinary Tract Infection (UTI)',
-          '   Independent Prescribers Service (IPS)',
-          'Emergency Medicines Supply (EMS)',
-          'Contraception Service (CS)',
-          'Discharge Medicines Review (DMR)',
+          'Patient Overview',
+          'Patient Detail',
+          'Patient History',
+          'Welsh GP Record (WGPR)',
+          'Adverse Reactions Management',
+          'Service Registration Management',
         ],
       },
       updated: UPDATED_AT,
