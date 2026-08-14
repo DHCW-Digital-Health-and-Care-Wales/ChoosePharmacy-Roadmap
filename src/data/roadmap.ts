@@ -249,7 +249,11 @@ export const roadmap: Roadmap = {
       capabilities: {
         label: 'Included Services',
         items: [
-          'Clinical Conditions Management (CCM) - This includes the Common Ailments Service (CAS) and Independent Prescribers Service (IPS)',
+          'Clinical Conditions Management (CCM)',
+          '   Common Ailments Service (CAS)',
+          '      Sore Throat Test and Treat (STTT)',
+          '      Urinary Tract Infection (UTI)',
+          '   Independent Prescribers Service (IPS)',
           'Emergency Medicines Supply (EMS)',
           'Contraception Service (CS)',
           'Discharge Medicines Review (DMR)',
