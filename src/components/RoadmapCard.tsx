@@ -20,6 +20,76 @@ function renderSummaryWithMetric(summary: string, metric?: string) {
 }
 
 /**
+ * Parse capabilities items with indentation into a nested structure
+ */
+function parseCapabilities(items: string[]) {
+  const result: Array<{
+    text: string;
+    level: number;
+  }> = [];
+
+  for (const item of items) {
+    const leadingSpaces = item.length - item.trimStart().length;
+    const level = Math.floor(leadingSpaces / 3); // 3 spaces per level
+    const text = item.trim();
+    result.push({ text, level });
+  }
+
+  return result;
+}
+
+/**
+ * Render nested list from parsed capabilities
+ */
+function renderCapabilitiesList(items: string[]) {
+  const parsed = parseCapabilities(items);
+  
+  const renderLevel = (startIndex: number, parentLevel: number): [JSX.Element, number] => {
+    const children: JSX.Element[] = [];
+    let i = startIndex;
+
+    while (i < parsed.length) {
+      const current = parsed[i];
+      
+      if (current.level < parentLevel) {
+        // Return to parent level
+        break;
+      }
+      
+      if (current.level === parentLevel) {
+        // Item at current level
+        const nextItem = parsed[i + 1];
+        const hasChildren = nextItem && nextItem.level > current.level;
+
+        if (hasChildren) {
+          const [nested, nextIndex] = renderLevel(i + 1, current.level + 1);
+          children.push(
+            <li key={`${i}-${current.text}`}>
+              {current.text}
+              <ul className="mt-1 list-disc space-y-1 pl-5">
+                {nested}
+              </ul>
+            </li>
+          );
+          i = nextIndex;
+        } else {
+          children.push(<li key={`${i}-${current.text}`}>{current.text}</li>);
+          i++;
+        }
+      } else if (current.level > parentLevel) {
+        // Skip items that are deeper than expected (they should be handled by parent)
+        i++;
+      }
+    }
+
+    return [<>{children}</>, i];
+  };
+
+  const [content] = renderLevel(0, 0);
+  return content;
+}
+
+/**
  * A single roadmap item (docs/BUILD_BRIEF.md Section 4). Shows the title,
  * summary, a text status label and any related services. Never shows a date:
  * the roadmap communicates priority and confidence, not committed dates.
@@ -58,9 +128,7 @@ export function RoadmapCard({ item }: { item: RoadmapItem }) {
             {item.capabilities.label}
           </summary>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-ink-900">
-            {item.capabilities.items.map((capability) => (
-              <li key={capability}>{capability}</li>
-            ))}
+            {renderCapabilitiesList(item.capabilities.items)}
           </ul>
         </details>
       ) : null}
