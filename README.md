@@ -7,7 +7,7 @@ setting for later.
 
 **Live site:** https://dhcw-digital-health-and-care-wales.github.io/ChoosePharmacy-Roadmap/
 
-> **Draft for Discussion.** This roadmap shows direction and priorities, not
+> **Beta (Feedback Welcome).** This roadmap shows direction and priorities, not
 > firm commitments. It carries no dates. Now is the firmest. Later is the most
 > likely to change as we learn.
 
