@@ -222,6 +222,17 @@ export const roadmap: Roadmap = {
       status: 'in-progress',
       outcome:
         'Pharmacy teams will have access to a single, consolidated view of key patient information to support safe, informed clinical decision-making.',
+      capabilities: {
+        label: 'Included Information',
+        items: [
+          'Patient Overview',
+          'Patient Detail',
+          'Patient History',
+          'Welsh GP Record (WGPR)',
+          'Adverse Reactions Management',
+          'Service Registration Management',
+        ],
+      },
       updated: UPDATED_AT,
     },
     {
