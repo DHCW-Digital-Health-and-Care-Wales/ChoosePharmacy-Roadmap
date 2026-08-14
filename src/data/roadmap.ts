@@ -189,13 +189,13 @@ export const roadmap: Roadmap = {
       id: 'pharmacy-hub',
       title: localised('Pharmacy Hub'),
       summary: localised(
-        'Create a hub to highlight key information for pharmacies and provide quick access to outstanding actions.',
+        'Centralised Pharmacy Hub that provides pharmacy teams with a view of services, messages, tasks, links, and operational information.',
       ),
       categoryId: CATEGORY_ID,
       horizon: 'now',
       status: 'in-progress',
       outcome:
-        'Pharmacy teams will have a central hub for managing activities, notifications and service information.',
+        'Provide a streamlined and intuitive experience that enables pharmacy teams to manage their workload more effectively and deliver services with greater confidence.',
       updated: UPDATED_AT,
     },
     {
