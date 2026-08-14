@@ -129,7 +129,7 @@ export const roadmap: Roadmap = {
     reviewNote: localised(
       'We update this roadmap as plans develop and we learn from delivery.',
     ),
-    statusLabel: 'Draft for Discussion',
+    statusLabel: 'Beta (Feedback Welcome)',
     betaNote: localised(
       'We are trialling a public beta of our roadmap here. Our long-term goal is to make these available through our website.',
     ),
@@ -202,7 +202,7 @@ export const roadmap: Roadmap = {
       id: 'patient-search-add-patient',
       title: localised('Patient Search/Add Patient'),
       summary: localised(
-        'Patient identification via integration with the Care Data Repository (CDR). Allow users to add patients manually if not found in the CDR using tools such as the Welsh Address Matching Service (WAMS) and GP lookups from the Welsh Reference Data Terminology Server.',
+        'Patient identification via integration with the Care Data Repository (CDR). Allow users to add patients manually if not found in the CDR using tools such as the Welsh Address Matching Service (WAMS).',
       ),
       categoryId: CATEGORY_ID,
       horizon: 'now',
@@ -215,7 +215,7 @@ export const roadmap: Roadmap = {
       id: 'patient-hub',
       title: localised('Patient Hub'),
       summary: localised(
-        'A centralised patient hub showing key patient information, including a consolidated patient history, allergy and intolerance management including Shared Medicines Record (SMR) integration and Welsh GP Record (WGPR) access.',
+        'A centralised patient hub showing key patient information, including a consolidated patient history, allergy and intolerance management including Shared Medicines Record (SMR) integration and adverse reaction recording.',
       ),
       categoryId: CATEGORY_ID,
       horizon: 'now',
@@ -276,7 +276,7 @@ export const roadmap: Roadmap = {
       id: 'welsh-immunisation-service-wis',
       title: localised('Welsh Immunisation Service (WIS)'),
       summary: localised(
-        'Integration with the Welsh Immunisation Service (WIS), allowing pharmacy teams to view vaccine eligibility information and vaccine data, with a seamless pass through to provide and record vaccinations delivered in pharmacy.',
+        'Integration with the Welsh Immunisation Service (WIS), allowing pharmacy teams to view vaccine eligibility information and vaccine data, with a seamless pass through to provide and record vaccination services.',
       ),
       categoryId: CATEGORY_ID,
       horizon: 'next',
@@ -334,7 +334,7 @@ export const roadmap: Roadmap = {
       horizon: 'next',
       status: 'exploring',
       outcome:
-        'The data will provide service insights and performance metrics that help users and stakeholders monitor services, make informed decisions, drive improvements in patient care and outcomes, and make key policy decisions.',
+        'The data will provide service insights and performance metrics that help users and stakeholders monitor services, make informed decisions, drive improvements in patient care and outcomes.',
       updated: UPDATED_AT,
     },
     {
@@ -360,20 +360,20 @@ export const roadmap: Roadmap = {
       horizon: 'later',
       status: 'exploring',
       outcome:
-        'Enable referral information to be shared seamlessly between NHS 111 and Choose Pharmacy, helping patients access the most appropriate care, reducing the need to repeat information, and allowing pharmacy teams to prepare for and manage incoming referrals effectively.',
+        'Enable referral information to be shared seamlessly between NHS 111 and Choose Pharmacy, helping patients access the most appropriate care, reducing the need to repeat information, and easing pressure on other services.',
       updated: UPDATED_AT,
     },
     {
       id: 'nhs-wales-app-integration',
       title: localised('NHS Wales App Integration'),
       summary: localised(
-        'Build integrations with the NHS Wales App, ensuring patient information can be shared with Choose Pharmacy and enabling patients to book appointments through the app and make nominations for the DMR service.',
+        'Build integrations with the NHS Wales App, ensuring patient information can be shared with Choose Pharmacy and enabling patients to book appointments through the app and make nominations.',
       ),
       categoryId: CATEGORY_ID,
       horizon: 'later',
       status: 'exploring',
       outcome:
-        'Enable patients to manage their interactions with community pharmacy through the NHS Wales App, including booking appointments and nominating services, while ensuring information is shared seamlessly to support coordinated care, reduce duplication, and improve patient outcomes.',
+        'Enable patients to manage their interactions with community pharmacy through the NHS Wales App, including booking appointments and nominating services, while ensuring information is shared securely.',
       updated: UPDATED_AT,
     },
     {
@@ -399,7 +399,7 @@ export const roadmap: Roadmap = {
       horizon: 'later',
       status: 'exploring',
       outcome:
-        'Provide pharmacy teams with streamlined, evidence-based clinical templates that reduce administrative effort, improve consultation efficiency, and enable patients to receive care more quickly and consistently.',
+        'Provide pharmacy teams with streamlined, evidence-based clinical templates that reduce administrative effort, improve consultation efficiency, and enable patients to receive care more quickly.',
       updated: UPDATED_AT,
     },
     {
@@ -425,7 +425,7 @@ export const roadmap: Roadmap = {
       horizon: 'later',
       status: 'exploring',
       outcome:
-        'Prescriptions generated within Choose Pharmacy will be transferred electronically to dispensing systems, reducing manual administration, streamlining pharmacy workflows, and helping patients receive their medicines more quickly.',
+        'Prescriptions generated within Choose Pharmacy will be transferred electronically to dispensing systems, reducing manual administration, streamlining pharmacy workflows, and helping patients get medicines faster.',
       updated: UPDATED_AT,
     },
     {
@@ -451,7 +451,7 @@ export const roadmap: Roadmap = {
       horizon: 'later',
       status: 'exploring',
       outcome:
-        'Consultation information will be shared directly with GP systems using clinically coded messages, reducing administrative effort, eliminating manual transcription, improving the timeliness and accuracy of patient records, and supporting better continuity of care.',
+        'Consultation information will be shared directly with GP systems using clinically coded messages, reducing administrative effort, eliminating manual transcription, improving the timeline for GPs to receive information, and improving patient safety.',
       updated: UPDATED_AT,
     },
   ],
