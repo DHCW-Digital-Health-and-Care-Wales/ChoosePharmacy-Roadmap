@@ -1,5 +1,6 @@
 import type { DeliveredSectionData } from '../data/roadmap';
 import { useLanguage } from '../lib/i18n';
+import { STATUS_LABELS } from '../lib/roadmap-helpers';
 
 function renderSummaryWithMetric(summary: string, metric?: string) {
   if (!metric || !summary.includes(metric)) {
@@ -79,6 +80,13 @@ export function DeliveredSection({
                       ))}
                     </ul>
                   </details>
+                ) : null}
+                {item.status ? (
+                  <div className="mt-3">
+                    <span className="inline-flex items-center rounded-full border border-border-strong bg-surface-subtle px-2.5 py-0.5 text-xs font-medium text-ink-700">
+                      {tr(STATUS_LABELS[item.status])}
+                    </span>
+                  </div>
                 ) : null}
               </article>
             ))}
