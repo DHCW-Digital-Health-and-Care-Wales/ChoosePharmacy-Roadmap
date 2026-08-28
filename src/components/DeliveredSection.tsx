@@ -62,6 +62,12 @@ export function DeliveredSection({
                 <p className="mt-2 text-sm leading-relaxed text-ink-900">
                   {renderSummaryWithMetric(tr(item.summary), item.metric)}
                 </p>
+                {item.outcome ? (
+                  <p className="mt-3 text-sm leading-relaxed text-ink-900">
+                    <strong className="font-semibold text-heading">Outcome:</strong>{' '}
+                    {item.outcome}
+                  </p>
+                ) : null}
                 {item.capabilities ? (
                   <details className="mt-3 rounded-card border border-border bg-surface-subtle p-3">
                     <summary className="cursor-pointer text-sm font-semibold text-heading">

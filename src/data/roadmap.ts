@@ -48,6 +48,7 @@ export interface DeliveredItem {
   id: string;
   title: Localised;
   summary: Localised;
+  outcome?: string;
   metric?: string;
   capabilities?: { label: string; items: string[] };
 }
@@ -521,11 +522,11 @@ export const roadmap: Roadmap = {
     items: [
       {
         id: 'hscn-access-route',
-        title: localised('New HSCN Access Route'),
+        title: localised('HSCN Access Route'),
         summary: localised(
           'Implemented a dedicated HSCN access route for Community Pharmacies, enabling users to access Choose Pharmacy directly without relying on Citrix.',
         ),
-        metric:
+        outcome:
           'Pharmacy teams benefit from faster and more reliable access to Choose Pharmacy, with improved application performance and a simplified printing experience through direct access to local printers. This reduces operational steps, improves efficiency, and enhances the overall user experience.',
       },
     ],
