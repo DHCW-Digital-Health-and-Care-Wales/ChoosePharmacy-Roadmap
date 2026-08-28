@@ -529,6 +529,15 @@ export const roadmap: Roadmap = {
         outcome:
           'Pharmacy teams benefit from faster and more reliable access to Choose Pharmacy, with improved application performance and a simplified printing experience through direct access to local printers. This reduces operational steps, improves efficiency, and enhances the overall user experience.',
       },
+      {
+        id: 'remote-access-route',
+        title: localised('Remote Access Route'),
+        summary: localised(
+          'Implemented a secure internet-based access route for Community Pharmacies, using Multi-Factor Authentication (MFA) to enable direct access to Choose Pharmacy without the need for Citrix.',
+        ),
+        outcome:
+          'Pharmacy teams can access Choose Pharmacy remotely, supporting the delivery of services and clinics outside of the traditional pharmacy setting. In addition to increased flexibility and mobility for staff, users benefit from the same advantages as the dedicated Pharmacy access route, including improved performance, faster access, a simplified user experience, and direct printing to local devices where appropriate',
+      },
     ],
   },
 
