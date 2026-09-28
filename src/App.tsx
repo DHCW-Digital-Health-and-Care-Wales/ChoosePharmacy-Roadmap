@@ -9,6 +9,7 @@ import { AccessibilityStatement } from './components/AccessibilityStatement';
 import { PrivacyNote } from './components/PrivacyNote';
 import { RoadmapFooter } from './components/RoadmapFooter';
 import { BackToTop } from './components/BackToTop';
+import { FeedbackSection } from './components/FeedbackSection';
 import { useLanguage } from './lib/i18n';
 
 /** The roadmap page. All content is read from src/data/roadmap.ts. */
@@ -63,6 +64,9 @@ export default function App() {
 
         {/* 7. Not now — explicit out-of-scope section */}
         <DeliveredSection section={roadmap.notRightNow} />
+
+        {/* 8. Feedback section */}
+        <FeedbackSection />
 
         <AccessibilityStatement />
         <PrivacyNote />
