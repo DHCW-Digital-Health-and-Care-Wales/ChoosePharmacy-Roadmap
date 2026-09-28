@@ -34,9 +34,34 @@ export function FeedbackSection() {
           {/* Text - Right side */}
           <div className="flex-1">
             <p className="max-w-2xl leading-relaxed text-ink-900">
-              {cy
-                ? 'Rydym yn croesawu eich adborth ar y Trywydd Dewis Fferyllfa. Ple sganiwch y cod QR i rannu eich safbwyntiau a helpu i lunio blaenoriaethau, gwelliannau a datblygiadau yn y dyfodol'
-                : 'We welcome your feedback on the Choose Pharmacy Roadmap. Please scan the QR code to share your views and help shape future priorities, improvements and developments'}
+              {cy ? (
+                <>
+                  Rydym yn croesawu eich adborth ar y Trywydd Dewis Fferyllfa. Ple sganiwch y cod QR neu cliciwch
+                  yr asodiad{' '}
+                  <a
+                    href="https://forms.cloud.microsoft/e/jrhCRJGUbR"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-link hover:underline"
+                  >
+                    Ffurflen Adborth Trywydd Dewis Fferyllfa
+                  </a>{' '}
+                  i rannu eich safbwyntiau a helpu i lunio blaenoriaethau, gwelliannau a datblygiadau yn y dyfodol
+                </>
+              ) : (
+                <>
+                  We welcome your feedback on the Choose Pharmacy Roadmap. Please scan the QR code or click the link{' '}
+                  <a
+                    href="https://forms.cloud.microsoft/e/jrhCRJGUbR"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-link hover:underline"
+                  >
+                    Choose Pharmacy Roadmap Feedback Form
+                  </a>{' '}
+                  to share your views and help shape future priorities, improvements and developments
+                </>
+              )}
             </p>
           </div>
         </div>
