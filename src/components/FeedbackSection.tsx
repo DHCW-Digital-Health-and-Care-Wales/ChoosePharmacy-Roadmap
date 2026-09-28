@@ -37,7 +37,7 @@ export function FeedbackSection() {
               {cy ? (
                 <>
                   Rydym yn croesawu eich adborth ar y Trywydd Dewis Fferyllfa. Ple sganiwch y cod QR neu cliciwch
-                  yr asodiad{' '}
+                  yr asodiad i gwblhau{' '}
                   <a
                     href="https://forms.cloud.microsoft/e/jrhCRJGUbR"
                     target="_blank"
@@ -46,11 +46,12 @@ export function FeedbackSection() {
                   >
                     Ffurflen Adborth Trywydd Dewis Fferyllfa
                   </a>{' '}
-                  i rannu eich safbwyntiau a helpu i lunio blaenoriaethau, gwelliannau a datblygiadau yn y dyfodol
+                  a rhannu eich safbwyntiau i helpu i lunio blaenoriaethau, gwelliannau a datblygiadau yn y dyfodol
                 </>
               ) : (
                 <>
-                  We welcome your feedback on the Choose Pharmacy Roadmap. Please scan the QR code or click the link{' '}
+                  We welcome your feedback on the Choose Pharmacy Roadmap. Please scan the QR code or click the link
+                  to complete the{' '}
                   <a
                     href="https://forms.cloud.microsoft/e/jrhCRJGUbR"
                     target="_blank"
@@ -59,7 +60,7 @@ export function FeedbackSection() {
                   >
                     Choose Pharmacy Roadmap Feedback Form
                   </a>{' '}
-                  to share your views and help shape future priorities, improvements and developments
+                  and share your views to help shape future priorities, improvements and developments
                 </>
               )}
             </p>
