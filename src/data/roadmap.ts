@@ -131,7 +131,7 @@ export const roadmap: Roadmap = {
     reviewNote: localised(
       'We update this roadmap as plans develop and we learn from delivery.',
     ),
-    statusLabel: 'Beta (Feedback Welcome)',
+    statusLabel: 'Beta',
     betaNote: localised(
       'We are trialling a public beta of our roadmap here. Our long-term goal is to make these available through our website.',
     ),
