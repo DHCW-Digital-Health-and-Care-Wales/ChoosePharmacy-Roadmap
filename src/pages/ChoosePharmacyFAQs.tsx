@@ -77,18 +77,36 @@ const FAQ_ITEMS: FAQItem[] = [
     answer: {
       cy: (
         <>
-          <strong>Q: Pryd fydd integreiddio presgripsiwn ar gael?</strong>
+          <strong>Q: Beth yw&rsquo;r cynllun ar gyfer presgripsiwn?</strong>
           <br />
           <br />
-          <strong>A:</strong> Mae&rsquo;r cynlluniau ar gyfer integreiddio gwasanaethau presgripsiwn yn cael eu datblygu. Byddwn yn darparu mwy o fanylion wrth i&rsquo;r gwaith symud ymlaen.
+          <strong>A:</strong> Mae integreiddiadau, gan gynnwys swyddogaeth bresgripsiwn, ar y trywydd ond nid ydynt yn cael eu cynllunio ar gyfer eu cynnwys yn y rhyddhau MVP.
         </>
       ),
       en: (
         <>
-          <strong>Q: When will prescribing integration be available?</strong>
+          <strong>Q: What is the plan for prescribing? Will there be EPS prescription functionality or paper printing and, if so, will it include 2D Rx barcodes (or integration with third-party EPS solutions such as Cleo EPS)?</strong>
           <br />
           <br />
-          <strong>A:</strong> Plans for integrating prescribing services are under development. We will provide more details as work progresses.
+          <strong>A:</strong> Integrations, including prescribing-related functionality, are on the roadmap but are not planned for inclusion within the MVP release.
+          <br />
+          <br />
+          <strong>Q: Can we ensure that prescriptions can be printed before completion of the consultation, as this is currently a significant operational barrier?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Following review of feedback, we have amended the CCM IPS pathway to allow prescriptions to be generated before consultation completion. Clinical assessment notes will be validated at the Consultation Summary stage rather than earlier in the journey, enabling prescriptions to be produced sooner while still requiring all mandatory information before finalisation. Symptoms and a diagnosis/condition remain mandatory prior to prescription generation. This enhancement is progressing through the development backlog.
+          <br />
+          <br />
+          <strong>Q: We also need to ensure that when printing scripts that the drug description does not include a pack size</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Pack size will not form part of the drug prescription.
+          <br />
+          <br />
+          <strong>Q: There was work in NHS Digital on dose syntax. Did that not result in a standardised approach?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Teams within DHCW are reviewing and investigating dosage syntax standards that are available.
         </>
       ),
     },
