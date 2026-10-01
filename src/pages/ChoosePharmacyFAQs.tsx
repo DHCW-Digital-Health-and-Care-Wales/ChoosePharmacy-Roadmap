@@ -8,7 +8,7 @@ import { useLanguage } from '../lib/i18n';
 interface FAQItem {
   id: string;
   question: { cy: string; en: string };
-  answer: { cy: string; en: string };
+  answer: { cy: React.ReactNode; en: React.ReactNode };
 }
 
 const FAQ_ITEMS: FAQItem[] = [
@@ -19,8 +19,40 @@ const FAQ_ITEMS: FAQItem[] = [
       en: 'Release Date',
     },
     answer: {
-      cy: 'Q: Pryd yn realistig y byddwn yn meddwl, y bydd defnyddwyr cynnar yn dechrau defnyddio\'r system newydd?\n\nA: Ni chyhoeddwyd unrhyw amserlenni eto. Cyn gynted ag y bydd gennym ddealltwriaeth gliriach o\'r amserlen, byddwn yn cyhoeddi hyn yn eang i\'r holl randdeiliaid.\n\nQ: Dangosodd y trywydd mewnforio cyffuriau ar gyfer DMR nad yw yn yr MVP. A allwch chi esbonio\'n union beth y mae hyn yn ei olygu. Ai mai dyma yw\'r pwynt nad ydym yn gallu mewnforio meddyginiaethau o\'r DAL?\n\nA: Ie, dyna\'s iawn.\n\nY rheswm dros hyn, yw bod y mecanwaith ar gyfer gofal eilaidd yn anfon DAL\'s yn newid gyda\'r cyflwyniad o systemau newydd fel Nerve Centre. Gan nad yw\'r tirlun newydd wedi\'i ddatblygu\'n llawn, nid ydym yn gallu echdynnu\'r data gan ni fydd dim ond yn derbyn DAL\'s mewn fformat PDF felly ni fydd yr echdyniad data ar gael.',
-      en: 'Q: When do we realistically think, early adopters will start using the new system?\n\nA: No timelines have been published yet. As soon as we have a clearer understanding of the timeframe, we will communicate this widely with stakeholders.\n\nQ: Roadmap showed drug import for DMR not in MVP. Please can you explain exactly what this means. Is it that we can\'t import meds from the DAL?\n\nA: Yes, that\'s correct.\n\nThe reason for this, is that the mechanism for secondary care sending DAL\'s is changing with the introduction of new systems such as Nerve Centre. As the new landscape is not fully developed, we are unable to extract the data as we will only be receiving DAL\'s in PDF format so the data extract will not be available.',
+      cy: (
+        <>
+          <strong>Q: Pryd yn realistig y byddwn yn meddwl, y bydd defnyddwyr cynnar yn dechrau defnyddio&rsquo;r system newydd?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Ni chyhoeddwyd unrhyw amserlenni eto. Cyn gynted ag y bydd gennym ddealltwriaeth gliriach o&rsquo;r amserlen, byddwn yn cyhoeddi hyn yn eang i&rsquo;r holl randdeiliaid.
+          <br />
+          <br />
+          <strong>Q: Dangosodd y trywydd mewnforio cyffuriau ar gyfer DMR nad yw yn yr MVP. A allwch chi esbonio&rsquo;n union beth y mae hyn yn ei olygu. Ai mai dyma yw&rsquo;r pwynt nad ydym yn gallu mewnforio meddyginiaethau o&rsquo;r DAL?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Ie, dyna&rsquo;s iawn.
+          <br />
+          <br />
+          Y rheswm dros hyn, yw bod y mecanwaith ar gyfer gofal eilaidd yn anfon DAL&rsquo;s yn newid gyda&rsquo;r cyflwyniad o systemau newydd fel Nerve Centre. Gan nad yw&rsquo;r tirlun newydd wedi&rsquo;i ddatblygu&rsquo;n llawn, nid ydym yn gallu echdynnu&rsquo;r data gan ni fydd dim ond yn derbyn DAL&rsquo;s mewn fformat PDF felly ni fydd yr echdyniad data ar gael.
+        </>
+      ),
+      en: (
+        <>
+          <strong>Q: When do we realistically think, early adopters will start using the new system?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> No timelines have been published yet. As soon as we have a clearer understanding of the timeframe, we will communicate this widely with stakeholders.
+          <br />
+          <br />
+          <strong>Q: Roadmap showed drug import for DMR not in MVP. Please can you explain exactly what this means. Is it that we can&rsquo;t import meds from the DAL?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Yes, that&rsquo;s correct.
+          <br />
+          <br />
+          The reason for this, is that the mechanism for secondary care sending DAL&rsquo;s is changing with the introduction of new systems such as Nerve Centre. As the new landscape is not fully developed, we are unable to extract the data as we will only be receiving DAL&rsquo;s in PDF format so the data extract will not be available.
+        </>
+      ),
     },
   },
   {
