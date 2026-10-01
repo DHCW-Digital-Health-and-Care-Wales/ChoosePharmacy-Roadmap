@@ -120,18 +120,30 @@ const FAQ_ITEMS: FAQItem[] = [
     answer: {
       cy: (
         <>
-          <strong>Q: Sut fydd cofnodion GP yn cael eu hintegreiddio?</strong>
+          <strong>Q: A yw&rsquo;r materion o ganlyniadau profion nad ydynt yn dangos mewn trefn amseryddol wedi&rsquo;u datrys yn y golwg WGPR yn y Dewis newydd?</strong>
           <br />
           <br />
-          <strong>A:</strong> Rydym yn gweithio ar integreiddio â chofresi GP i ddarparu gwybodaeth fwy cydgysylltiedig. Byddwn yn cyhoeddi diweddariadau ar y datblygiad hwn.
+          <strong>A:</strong> Mae&rsquo;r Ymchwiliadau a canlyniadau profion bellach wedi&rsquo;u rhannu i&rsquo;w tab eu hunain sy&rsquo;n cael eu dangos mewn trefn amseryddol yn seiliedig ar ddyddiad canlyniad y prawf neu ddyddiad y prawf. Y prif achos y broblem yn y Dewis presennol oedd bod yr wybodaeth mewn un tab.
+          <br />
+          <br />
+          <strong>Q: Oes unrhyw gynlluniau i gysylltu â chofresi GP cleifion Lloegr?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Mae DHCW wedi&rsquo;i ymrwymo i wella rhannu gwybodaeth iechyd trawsffiniol ac yn cefnogi&rsquo;n weithredol fenter sy&rsquo;n galluogi clinigwyr i gael mynediad at wybodaeth cleifion berthnasol y tu allan i Gymru lle&rsquo;n briodol. Fodd bynnag, mae integreiddio uniongyrchol, amser-real â chofresi GP Lloegr yn dibynnu ar drefniadau rhyng-weithrededd ehangach rhwng NHS Cymru a NHS Lloegr, gan gynnwys safonau technegol, llywodraethu, a chytundebau rhannu data. Er bod cynnydd yn parhau yn y maes hwn, nid oes cynlluniau nac amserlenni cadarnhawyd ar hyn o bryd ar gyfer mynediad llawn at gofresi GP Lloegr yn fyw o fewn systemau clinigol Cymru.
         </>
       ),
       en: (
         <>
-          <strong>Q: How will GP records be integrated?</strong>
+          <strong>Q: Has the issues of test result not showing in chronological order been resolved in WGPR view in new Choose?</strong>
           <br />
           <br />
-          <strong>A:</strong> We are working on integration with GP records to provide more connected information. We will publish updates on this development.
+          <strong>A:</strong> The Investigations and test results are now split into their own tabs which are displayed in chronological order based on the test result date or test date. The issue in the current Choose was due to the information being in one tab.
+          <br />
+          <br />
+          <strong>Q: Any plans to connect with English patients GP records?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> DHCW is committed to improving cross-border health information sharing and is actively supporting initiatives that enable clinicians to access relevant patient information from outside Wales where appropriate. However, direct, real-time integration with English GP records depends on wider interoperability arrangements between NHS Wales and NHS England, including technical standards, governance, and data-sharing agreements. While progress continues in this area, there are currently no confirmed plans or timelines for full access to live English GP records within Welsh clinical systems.
         </>
       ),
     },
