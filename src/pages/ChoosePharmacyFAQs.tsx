@@ -271,8 +271,8 @@ export function ChoosePharmacyFAQs() {
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-ink-700">
               {cy
-                ? 'Darganfyddwch atebion i gwestiynau am y cymhwysiad Dewis Fferyllfa newydd sy\'n cael ei ddatblygu ar hyn o bryd'
-                : 'Find answers to questions about the new Choose Pharmacy application currently being developed'}
+                ? 'Darganfyddwch atebion i gwestiynau a godwyd gan ddefnyddwyr a rhanddeiliaid am y cymhwysiad Dewis Fferyllfa newydd, gan gynnwys ei nodweddion, trywydd, a chyfeiriad y dyfodol.'
+                : 'Find answers to questions raised by users and stakeholders about the new Choose Pharmacy application, including its features, roadmap, and future direction.'}
             </p>
           </div>
         </section>
