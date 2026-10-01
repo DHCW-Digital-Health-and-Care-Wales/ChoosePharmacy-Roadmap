@@ -206,18 +206,30 @@ const FAQ_ITEMS: FAQItem[] = [
     answer: {
       cy: (
         <>
-          <strong>Q: Sut ydych yn dilysu&rsquo;r data?</strong>
+          <strong>Q: A all dyddiad yn y dyfodol gael ei nodi yn y dyddiad ac amser y ymgynghoriad yn nhudalen manylion ymgynghoriad yr EMS?</strong>
           <br />
           <br />
-          <strong>A:</strong> Rydym yn dilysu&rsquo;r holl ddata gyda fferyllfeydd a chyrff iechyd perthnasol i sicrhau cywirdeb a chonau&rsquo;r gwybodaeth.
+          <strong>A:</strong> Na, bydd rheolau dilysu yn atal defnyddwyr rhag nodi dyddiad yn y dyfodol ar gyfer ymgynghoriad EMS.
+          <br />
+          <br />
+          <strong>Q: A fydd y system yn dangos Presgripsiwn Annibynnol yn unig os yw&rsquo;r person wedi&rsquo;i ardystio?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Bydd yr ap yn caniatáu Presgripsiwn Annibynnol yn unig os yw&rsquo;r defnyddiwr yn cael ei restru fel IP a gynhelir gan NWSSP.
         </>
       ),
       en: (
         <>
-          <strong>Q: How do you validate the data?</strong>
+          <strong>Q: Can a future date be entered into the date and time of consultation in the in the EMS consultation details page?</strong>
           <br />
           <br />
-          <strong>A:</strong> We validate all data with relevant pharmacies and health bodies to ensure accuracy and reliability of information.
+          <strong>A:</strong> No, the validation rules will prevent users from entering a future date for an EMS consultation.
+          <br />
+          <br />
+          <strong>Q: Will the system only show Independent Prescribing if the person is accredited?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> The application will only allow Independent Prescribing if the user is listed as an IP held by NWSSP.
         </>
       ),
     },
