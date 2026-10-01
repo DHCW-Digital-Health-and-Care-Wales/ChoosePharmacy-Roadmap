@@ -157,18 +157,42 @@ const FAQ_ITEMS: FAQItem[] = [
     answer: {
       cy: (
         <>
-          <strong>Q: Sut mae&rsquo;r nodwedd chwilio yn gweithio?</strong>
+          <strong>Q: A fydd swyddogaeth chwilio claf yn gweithio gyda llythrennau cyntaf yn unig (nid enwau llawn), fel y mae&rsquo;r Dewis presennol yn ei wneud?</strong>
           <br />
           <br />
-          <strong>A:</strong> Mae&rsquo;r nodwedd chwilio wedi&rsquo;i optimeiddio i ddod o hyd i fferyllfeydd yn gyflym yn ôl lleoliad a gwasanaethau. Defnyddiwn ddata cywir ac up-to-date.
+          <strong>A:</strong> Gan y byddwn yn symud i&rsquo;r Care Data Repository (CDR) yn hytrach na&rsquo;r Welsh Demographics Service (WDS) rydym wedi cadarnhau bod chwilio claf yn gallu cael ei gwblhau gyda llythrennau enw cyntaf a chynaf.
+          <br />
+          <br />
+          <strong>Q: Chwilio meddyginiaethau - a ydym wedi sicrhau ei bod wrth chwilio am generig yn unig y dangosir yr enw generig (heb brand) - VMP. Ar hyn o bryd mae dewis yn dangos pob brand generig sengl (amp) sy&rsquo;n broblemati</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Bydd gan chwiliad meddyginiaeth switsh toggle Generig/Branded. Yna bydd y meddyginiaethau a ddangosir yn unol â&rsquo;r hyn a ddewiswyd. Bydd maint y pecyn yn rhestr dropdown yn seiliedig ar y maint sydd ar gael ar gyfer y VMPP/AMPP. Bydd y DMD yn diweddaru&rsquo;r wythnosol yn unol â data TRUD
+          <br />
+          <br />
+          <strong>Q: A yw hynny&rsquo;n golygu y bydd y data sy&rsquo;n dychwelyd i NWSSP ar AVP, MVP yn unig yr enw generig at ddibenion prisio?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Byddwn yn darparu NWSSP gyda&rsquo;r set lawn o wybodaeth sy&rsquo;n gysylltiedig â meddyginiaethau sy&rsquo;n angenrheidiol ar gyfer ad-dalu, gan gynnwys pob safonau codio perthnasol a manylion maint y pecyn. Trwy ddarparu&rsquo;r ystod lawn o godau sy&rsquo;n gysylltiedig â&rsquo;r meddyginiaeth a rhyddhawyd, bydd gan NWSSP yr wybodaeth sydd ei hangen i bennu a phrosesu&rsquo;r taliad ad-dalu priodol yn gywir.
         </>
       ),
       en: (
         <>
-          <strong>Q: How does the search feature work?</strong>
+          <strong>Q: Will the patient search function work with initials only (not full names), as the current Choose does?</strong>
           <br />
           <br />
-          <strong>A:</strong> The search feature is optimized to find pharmacies quickly by location and services. We use accurate and up-to-date data.
+          <strong>A:</strong> As we will be moving to the Care Data Repository (CDR) as opposed to the Welsh Demographics Service (WDS) we have confirmed that a patient search can be completed with first and last name initials.
+          <br />
+          <br />
+          <strong>Q: Medicines search - have we ensured that when searching generic only the generic name (without brand) shows - VMP. Currently choose shows every single generic brand (amp) which is problematic</strong>
+          <br />
+          <br />
+          <strong>A:</strong> The medication search will have a Generic/Branded toggle switch. The medications then displayed will be inline with what is selected. Pack size will then be a drop down based on the available sizes for the VMPP/AMPP. The DMD will weekly update inline with TRUD data
+          <br />
+          <br />
+          <strong>Q: Does that mean the data heading back to NWSSP on AVP, MVP will just be the generic name for pricing purposes?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> We will provide NWSSP with the full set of medicine-related information required for reimbursement, including all relevant coding standards and pack size details. By supplying the complete range of codes associated with the dispensed medicine, NWSSP will have the information needed to determine and process the appropriate reimbursement payment accurately.
         </>
       ),
     },
