@@ -19,8 +19,8 @@ const FAQ_ITEMS: FAQItem[] = [
       en: 'Release Date',
     },
     answer: {
-      cy: 'Mae\'r cymhwysiad Dewis Fferyllfa yn cael ei ddatblygu ar hyn o bryd. Byddwn yn cyhoeddi manylion am y dyddiad rhyddhau yn fuan.',
-      en: 'The Choose Pharmacy application is currently under development. We will announce details about the release date soon.',
+      cy: 'Q: Pryd yn realistig y byddwn yn meddwl, y bydd defnyddwyr cynnar yn dechrau defnyddio\'r system newydd?\n\nA: Ni chyhoeddwyd unrhyw amserlenni eto. Cyn gynted ag y bydd gennym ddealltwriaeth gliriach o\'r amserlen, byddwn yn cyhoeddi hyn yn eang i\'r holl randdeiliaid.\n\nQ: Dangosodd y trywydd mewnforio cyffuriau ar gyfer DMR nad yw yn yr MVP. A allwch chi esbonio\'n union beth y mae hyn yn ei olygu. Ai mai dyma yw\'r pwynt nad ydym yn gallu mewnforio meddyginiaethau o\'r DAL?\n\nA: Ie, dyna\'s iawn.\n\nY rheswm dros hyn, yw bod y mecanwaith ar gyfer gofal eilaidd yn anfon DAL\'s yn newid gyda\'r cyflwyniad o systemau newydd fel Nerve Centre. Gan nad yw\'r tirlun newydd wedi\'i ddatblygu\'n llawn, nid ydym yn gallu echdynnu\'r data gan ni fydd dim ond yn derbyn DAL\'s mewn fformat PDF felly ni fydd yr echdyniad data ar gael.',
+      en: 'Q: When do we realistically think, early adopters will start using the new system?\n\nA: No timelines have been published yet. As soon as we have a clearer understanding of the timeframe, we will communicate this widely with stakeholders.\n\nQ: Roadmap showed drug import for DMR not in MVP. Please can you explain exactly what this means. Is it that we can\'t import meds from the DAL?\n\nA: Yes, that\'s correct.\n\nThe reason for this, is that the mechanism for secondary care sending DAL\'s is changing with the introduction of new systems such as Nerve Centre. As the new landscape is not fully developed, we are unable to extract the data as we will only be receiving DAL\'s in PDF format so the data extract will not be available.',
     },
   },
   {
