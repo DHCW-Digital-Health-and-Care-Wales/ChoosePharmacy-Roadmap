@@ -62,8 +62,22 @@ const FAQ_ITEMS: FAQItem[] = [
       en: 'MVP Features',
     },
     answer: {
-      cy: 'Mae\'r Cynnyrch Lleiaflyd Hyfyw (MVP) yn cynnwys darganfod fferyllfeydd lleol, gwybodaeth am wasanaethau, a manylion cysylltu. Byddwn yn ychwanegu mwy o nodweddion yn y dyfodol.',
-      en: 'The Minimum Viable Product (MVP) includes discovering local pharmacies, service information, and contact details. We will add more features in the future.',
+      cy: (
+        <>
+          <strong>Q: Beth sy&rsquo;n cael ei gynnwys yn yr MVP?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Mae&rsquo;r Cynnyrch Lleiaflyd Hyfyw (MVP) yn cynnwys darganfod fferyllfeydd lleol, gwybodaeth am wasanaethau, a manylion cysylltu. Byddwn yn ychwanegu mwy o nodweddion yn y dyfodol.
+        </>
+      ),
+      en: (
+        <>
+          <strong>Q: What is included in the MVP?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> The Minimum Viable Product (MVP) includes discovering local pharmacies, service information, and contact details. We will add more features in the future.
+        </>
+      ),
     },
   },
   {
@@ -73,8 +87,22 @@ const FAQ_ITEMS: FAQItem[] = [
       en: 'Prescribing',
     },
     answer: {
-      cy: 'Mae\'r cynlluniau ar gyfer integreiddio gwasanaethau presgripsiwn yn cael eu datblygu. Byddwn yn darparu mwy o fanylion wrth i\'r gwaith symud ymlaen.',
-      en: 'Plans for integrating prescribing services are under development. We will provide more details as work progresses.',
+      cy: (
+        <>
+          <strong>Q: Pryd fydd integreiddio presgripsiwn ar gael?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Mae&rsquo;r cynlluniau ar gyfer integreiddio gwasanaethau presgripsiwn yn cael eu datblygu. Byddwn yn darparu mwy o fanylion wrth i&rsquo;r gwaith symud ymlaen.
+        </>
+      ),
+      en: (
+        <>
+          <strong>Q: When will prescribing integration be available?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Plans for integrating prescribing services are under development. We will provide more details as work progresses.
+        </>
+      ),
     },
   },
   {
@@ -84,8 +112,22 @@ const FAQ_ITEMS: FAQItem[] = [
       en: 'GP Record',
     },
     answer: {
-      cy: 'Rydym yn gweithio ar integreiddio â chofresi GP i ddarparu gwybodaeth fwy cydgysylltiedig. Byddwn yn cyhoeddi diweddariadau ar y datblygiad hwn.',
-      en: 'We are working on integration with GP records to provide more connected information. We will publish updates on this development.',
+      cy: (
+        <>
+          <strong>Q: Sut fydd cofnodion GP yn cael eu hintegreiddio?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Rydym yn gweithio ar integreiddio â chofresi GP i ddarparu gwybodaeth fwy cydgysylltiedig. Byddwn yn cyhoeddi diweddariadau ar y datblygiad hwn.
+        </>
+      ),
+      en: (
+        <>
+          <strong>Q: How will GP records be integrated?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> We are working on integration with GP records to provide more connected information. We will publish updates on this development.
+        </>
+      ),
     },
   },
   {
@@ -95,8 +137,22 @@ const FAQ_ITEMS: FAQItem[] = [
       en: 'Search and Data',
     },
     answer: {
-      cy: 'Mae\'r nodwedd chwilio wedi\'i optimeiddio i ddod o hyd i fferyllfeydd yn gyflym yn ôl lleoliad a gwasanaethau. Defnyddiwn ddata cywir ac up-to-date.',
-      en: 'The search feature is optimized to find pharmacies quickly by location and services. We use accurate and up-to-date data.',
+      cy: (
+        <>
+          <strong>Q: Sut mae&rsquo;r nodwedd chwilio yn gweithio?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Mae&rsquo;r nodwedd chwilio wedi&rsquo;i optimeiddio i ddod o hyd i fferyllfeydd yn gyflym yn ôl lleoliad a gwasanaethau. Defnyddiwn ddata cywir ac up-to-date.
+        </>
+      ),
+      en: (
+        <>
+          <strong>Q: How does the search feature work?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> The search feature is optimized to find pharmacies quickly by location and services. We use accurate and up-to-date data.
+        </>
+      ),
     },
   },
   {
@@ -106,8 +162,22 @@ const FAQ_ITEMS: FAQItem[] = [
       en: 'Validation',
     },
     answer: {
-      cy: 'Rydym yn dilysu\'r holl ddata gyda fferyllfeydd a chyrff iechyd perthnasol i sicrhau cywirdeb a chonau\'r gwybodaeth.',
-      en: 'We validate all data with relevant pharmacies and health bodies to ensure accuracy and reliability of information.',
+      cy: (
+        <>
+          <strong>Q: Sut ydych yn dilysu&rsquo;r data?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> Rydym yn dilysu&rsquo;r holl ddata gyda fferyllfeydd a chyrff iechyd perthnasol i sicrhau cywirdeb a chonau&rsquo;r gwybodaeth.
+        </>
+      ),
+      en: (
+        <>
+          <strong>Q: How do you validate the data?</strong>
+          <br />
+          <br />
+          <strong>A:</strong> We validate all data with relevant pharmacies and health bodies to ensure accuracy and reliability of information.
+        </>
+      ),
     },
   },
 ];
