@@ -13,91 +13,69 @@ interface FAQItem {
 
 const FAQ_ITEMS: FAQItem[] = [
   {
-    id: 'what-is-choose-pharmacy',
+    id: 'release-date',
     question: {
-      cy: 'Beth yw Dewis Fferyllfa?',
-      en: 'What is Choose Pharmacy?',
+      cy: 'Dyddiad Rhyddhau',
+      en: 'Release Date',
     },
     answer: {
-      cy: 'Dewis Fferyllfa yw gwasanaeth sydd yn helpu cleifion yng Nghymru ddarganfod a chysylltu â fferyllfeydd lleol. Mae\'n rhoi gwybodaeth am wasanaethau, amseroedd agor, a ffyrdd o gysylltu.',
-      en: 'Choose Pharmacy is a service that helps patients in Wales discover and connect with local pharmacies. It provides information about services, opening times, and ways to get in touch.',
+      cy: 'Mae\'r cymhwysiad Dewis Fferyllfa yn cael ei ddatblygu ar hyn o bryd. Byddwn yn cyhoeddi manylion am y dyddiad rhyddhau yn fuan.',
+      en: 'The Choose Pharmacy application is currently under development. We will announce details about the release date soon.',
     },
   },
   {
-    id: 'how-to-find-pharmacy',
+    id: 'mvp-features',
     question: {
-      cy: 'Sut ydw i\'n dod o hyd i fferyllfa?',
-      en: 'How do I find a pharmacy?',
+      cy: 'Nodweddion MVP',
+      en: 'MVP Features',
     },
     answer: {
-      cy: 'Gallwch ddefnyddio\'r chwiliad lleoli ar ein gwefan i ddarganfod fferyllfeydd agosaf atynt. Gallwch hidlo yn ôl enw\'r fferyllfa, lleoliad, neu\'r gwasanaethau sydd gan angen arnoch.',
-      en: 'You can use the location search on our website to find the nearest pharmacies to you. You can filter by pharmacy name, location, or the services you need.',
+      cy: 'Mae\'r Cynnyrch Lleiaflyd Hyfyw (MVP) yn cynnwys darganfod fferyllfeydd lleol, gwybodaeth am wasanaethau, a manylion cysylltu. Byddwn yn ychwanegu mwy o nodweddion yn y dyfodol.',
+      en: 'The Minimum Viable Product (MVP) includes discovering local pharmacies, service information, and contact details. We will add more features in the future.',
     },
   },
   {
-    id: 'what-services-available',
+    id: 'prescribing',
     question: {
-      cy: 'Pa wasanaethau sydd ar gael?',
-      en: 'What services are available?',
+      cy: 'Presgripsiwn',
+      en: 'Prescribing',
     },
     answer: {
-      cy: 'Mae gan fferyllfeydd amrywiol wasanaethau megis presgripsiwn, cyngor ar iechyd, nwyddau cymorth cyntaf, a mwy. Gallwch wirio gwefan pob fferyllfa am y gwasanaethau penodol maen nhw\'n cynnig.',
-      en: 'Pharmacies offer various services including prescriptions, health advice, first aid supplies, and more. You can check each pharmacy\'s website for the specific services they provide.',
+      cy: 'Mae\'r cynlluniau ar gyfer integreiddio gwasanaethau presgripsiwn yn cael eu datblygu. Byddwn yn darparu mwy o fanylion wrth i\'r gwaith symud ymlaen.',
+      en: 'Plans for integrating prescribing services are under development. We will provide more details as work progresses.',
     },
   },
   {
-    id: 'opening-hours',
+    id: 'gp-record',
     question: {
-      cy: 'Beth yw amseroedd agor y fferyllfa?',
-      en: 'What are the pharmacy opening hours?',
+      cy: 'Cofnod GP',
+      en: 'GP Record',
     },
     answer: {
-      cy: 'Mae amseroedd agor yn amrywio\'n ôl y fferyllfa. Mae\'r rhan fwyaf yn agored yn y dyddiau gwaith, gydag ychydig yn agored ar benwythnosau. Ewch i\'r tudalen fferyllfa benodol am y manylion diweddaraf.',
-      en: 'Opening hours vary by pharmacy. Most are open on weekdays, with some open on weekends. Visit the specific pharmacy page for the latest details.',
+      cy: 'Rydym yn gweithio ar integreiddio â chofresi GP i ddarparu gwybodaeth fwy cydgysylltiedig. Byddwn yn cyhoeddi diweddariadau ar y datblygiad hwn.',
+      en: 'We are working on integration with GP records to provide more connected information. We will publish updates on this development.',
     },
   },
   {
-    id: 'emergency-pharmacy',
+    id: 'search-and-data',
     question: {
-      cy: 'Beth ydw i\'n gwneud mewn achos brys?',
-      en: 'What do I do in an emergency?',
+      cy: 'Chwilio a Data',
+      en: 'Search and Data',
     },
     answer: {
-      cy: 'Os ydych mewn achos brys meddygol, ffoniwch 999. Ar gyfer cyngor meddygol nad yw\'n frys, ffoniwch 111 neu ewch i\'r gwefan NHS 111 Wales.',
-      en: 'If you are in a medical emergency, call 999. For non-emergency medical advice, call 111 or visit the NHS 111 Wales website.',
+      cy: 'Mae\'r nodwedd chwilio wedi\'i optimeiddio i ddod o hyd i fferyllfeydd yn gyflym yn ôl lleoliad a gwasanaethau. Defnyddiwn ddata cywir ac up-to-date.',
+      en: 'The search feature is optimized to find pharmacies quickly by location and services. We use accurate and up-to-date data.',
     },
   },
   {
-    id: 'prescription-process',
+    id: 'validation',
     question: {
-      cy: 'Sut mae\'r broses presgripsiwn yn gweithio?',
-      en: 'How does the prescription process work?',
+      cy: 'Dilysu',
+      en: 'Validation',
     },
     answer: {
-      cy: 'Cewch ganiatâd presgripsiwn gan eich meddyg. Yna gallwch fynd i unrhyw fferyllfa i dderbyn eich meddyginiaethau. Mae rhai fferyllfeydd hefyd yn cynnig gwasanaethau e-presgripsiwn.',
-      en: 'You receive a prescription from your doctor. You can then visit any pharmacy to obtain your medications. Some pharmacies also offer e-prescription services.',
-    },
-  },
-  {
-    id: 'access-support',
-    question: {
-      cy: 'Ble gallaf i gael cymorth ar hygyrchedd?',
-      en: 'Where can I get accessibility support?',
-    },
-    answer: {
-      cy: 'Os oes gennych anabledd neu anghenion penodol, cysylltwch â\'r fferyllfa yn uniongyrchol. Gallant ddarparu help ag ar y safle, llinellau ffôn, neu wasanaethau cyfieithu.',
-      en: 'If you have a disability or specific needs, contact the pharmacy directly. They can provide on-site help, phone support, or translation services.',
-    },
-  },
-  {
-    id: 'feedback-complaints',
-    question: {
-      cy: 'Sut ydw i\'n rhoi adborth neu gwŷn?',
-      en: 'How do I give feedback or make a complaint?',
-    },
-    answer: {
-      cy: 'Gallwch roi adborth neu gwŷn drwy gyswllt â\'r fferyllfa yn uniongyrchol neu drwy ddefnyddio ein ffurflen adborth ar-lein. Ewch i\'r dudalen adborth am fwy o fanylion.',
-      en: 'You can provide feedback or make a complaint by contacting the pharmacy directly or by using our online feedback form. Visit the feedback page for more details.',
+      cy: 'Rydym yn dilysu\'r holl ddata gyda fferyllfeydd a chyrff iechyd perthnasol i sicrhau cywirdeb a chonau\'r gwybodaeth.',
+      en: 'We validate all data with relevant pharmacies and health bodies to ensure accuracy and reliability of information.',
     },
   },
 ];
