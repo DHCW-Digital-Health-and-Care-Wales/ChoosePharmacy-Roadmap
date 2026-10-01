@@ -100,7 +100,7 @@ const FAQ_ITEMS: FAQItem[] = [
           <strong>Q: We also need to ensure that when printing scripts that the drug description does not include a pack size</strong>
           <br />
           <br />
-          <strong>A:</strong> Pack size will not form part of the drug prescription.
+          <strong>A:</strong> Pack size will not form part of the drug description.
           <br />
           <br />
           <strong>Q: There was work in NHS Digital on dose syntax. Did that not result in a standardised approach?</strong>
