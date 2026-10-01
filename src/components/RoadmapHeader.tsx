@@ -10,7 +10,7 @@ const NAV_LINKS: { href: string; label: Localised }[] = [
     href: '#about',
     label: { cy: 'Am y trywydd hwn', en: 'About this roadmap' },
   },
-  { href: '#roadmap', label: { cy: 'Y trywydd', en: 'The roadmap' } },
+  { href: '/ChoosePharmacy-Roadmap#roadmap', label: { cy: 'Y trywydd', en: 'The roadmap' } },
   {
     href: '/ChoosePharmacy-Roadmap/faq',
     label: { cy: 'Cwestiynau Cyffredin', en: 'FAQs' },
