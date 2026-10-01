@@ -25,15 +25,6 @@ const FAQ_ITEMS: FAQItem[] = [
           <br />
           <br />
           <strong>A:</strong> Ni chyhoeddwyd unrhyw amserlenni eto. Cyn gynted ag y bydd gennym ddealltwriaeth gliriach o&rsquo;r amserlen, byddwn yn cyhoeddi hyn yn eang i&rsquo;r holl randdeiliaid.
-          <br />
-          <br />
-          <strong>Q: Dangosodd y trywydd mewnforio cyffuriau ar gyfer DMR nad yw yn yr MVP. A allwch chi esbonio&rsquo;n union beth y mae hyn yn ei olygu. Ai mai dyma yw&rsquo;r pwynt nad ydym yn gallu mewnforio meddyginiaethau o&rsquo;r DAL?</strong>
-          <br />
-          <br />
-          <strong>A:</strong> Ie, dyna&rsquo;s iawn.
-          <br />
-          <br />
-          Y rheswm dros hyn, yw bod y mecanwaith ar gyfer gofal eilaidd yn anfon DAL&rsquo;s yn newid gyda&rsquo;r cyflwyniad o systemau newydd fel Nerve Centre. Gan nad yw&rsquo;r tirlun newydd wedi&rsquo;i ddatblygu&rsquo;n llawn, nid ydym yn gallu echdynnu&rsquo;r data gan ni fydd dim ond yn derbyn DAL&rsquo;s mewn fformat PDF felly ni fydd yr echdyniad data ar gael.
         </>
       ),
       en: (
@@ -42,15 +33,6 @@ const FAQ_ITEMS: FAQItem[] = [
           <br />
           <br />
           <strong>A:</strong> No timelines have been published yet. As soon as we have a clearer understanding of the timeframe, we will communicate this widely with stakeholders.
-          <br />
-          <br />
-          <strong>Q: Roadmap showed drug import for DMR not in MVP. Please can you explain exactly what this means. Is it that we can&rsquo;t import meds from the DAL?</strong>
-          <br />
-          <br />
-          <strong>A:</strong> Yes, that&rsquo;s correct.
-          <br />
-          <br />
-          The reason for this, is that the mechanism for secondary care sending DAL&rsquo;s is changing with the introduction of new systems such as Nerve Centre. As the new landscape is not fully developed, we are unable to extract the data as we will only be receiving DAL&rsquo;s in PDF format so the data extract will not be available.
         </>
       ),
     },
@@ -64,18 +46,24 @@ const FAQ_ITEMS: FAQItem[] = [
     answer: {
       cy: (
         <>
-          <strong>Q: Beth sy&rsquo;n cael ei gynnwys yn yr MVP?</strong>
+          <strong>Q: Dangosodd y trywydd mewnforio cyffuriau ar gyfer DMR nad yw yn yr MVP. A allwch chi esbonio&rsquo;n union beth y mae hyn yn ei olygu. Ai mai dyma yw&rsquo;r pwynt nad ydym yn gallu mewnforio meddyginiaethau o&rsquo;r DAL?</strong>
           <br />
           <br />
-          <strong>A:</strong> Mae&rsquo;r Cynnyrch Lleiaflyd Hyfyw (MVP) yn cynnwys darganfod fferyllfeydd lleol, gwybodaeth am wasanaethau, a manylion cysylltu. Byddwn yn ychwanegu mwy o nodweddion yn y dyfodol.
+          <strong>A:</strong> Ie, dyna&rsquo;s iawn.
+          <br />
+          <br />
+          Y rheswm dros hyn, yw bod y mecanwaith ar gyfer gofal eilaidd yn anfon DAL&rsquo;s yn newid gyda&rsquo;r cyflwyniad o systemau newydd fel Nerve Centre. Gan nad yw&rsquo;r tirlun newydd wedi&rsquo;i ddatblygu&rsquo;n llawn, nid ydym yn gallu echdynnu&rsquo;r data gan ni fydd dim ond yn derbyn DAL&rsquo;s mewn fformat PDF felly ni fydd yr echdyniad data ar gael.
         </>
       ),
       en: (
         <>
-          <strong>Q: What is included in the MVP?</strong>
+          <strong>Q: Roadmap showed drug import for DMR not in MVP. Please can you explain exactly what this means. Is it that we can&rsquo;t import meds from the DAL?</strong>
           <br />
           <br />
-          <strong>A:</strong> The Minimum Viable Product (MVP) includes discovering local pharmacies, service information, and contact details. We will add more features in the future.
+          <strong>A:</strong> Yes, that&rsquo;s correct.
+          <br />
+          <br />
+          The reason for this, is that the mechanism for secondary care sending DAL&rsquo;s is changing with the introduction of new systems such as Nerve Centre. As the new landscape is not fully developed, we are unable to extract the data as we will only be receiving DAL&rsquo;s in PDF format so the data extract will not be available.
         </>
       ),
     },
