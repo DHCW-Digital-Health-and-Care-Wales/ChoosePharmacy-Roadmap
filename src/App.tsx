@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { roadmap } from './data/roadmap';
 import { RoadmapHeader } from './components/RoadmapHeader';
 import { RoadmapIntro } from './components/RoadmapIntro';
@@ -10,12 +11,27 @@ import { PrivacyNote } from './components/PrivacyNote';
 import { RoadmapFooter } from './components/RoadmapFooter';
 import { BackToTop } from './components/BackToTop';
 import { FeedbackSection } from './components/FeedbackSection';
+import { ChoosePharmacyFAQs } from './pages/ChoosePharmacyFAQs';
 import { useLanguage } from './lib/i18n';
 
-/** The roadmap page. All content is read from src/data/roadmap.ts. */
+/** The app router. Renders either the Roadmap or FAQ page based on the current pathname. */
 export default function App() {
   const { lang } = useLanguage();
   const cy = lang === 'cy';
+  const [currentPage, setCurrentPage] = useState<'roadmap' | 'faq'>('roadmap');
+
+  useEffect(() => {
+    const path = window.location.pathname;
+    if (path.includes('/faq')) {
+      setCurrentPage('faq');
+    } else {
+      setCurrentPage('roadmap');
+    }
+  }, []);
+
+  if (currentPage === 'faq') {
+    return <ChoosePharmacyFAQs />;
+  }
 
   return (
     <>
