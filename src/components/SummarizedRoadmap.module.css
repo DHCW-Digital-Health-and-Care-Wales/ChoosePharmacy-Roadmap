@@ -1,0 +1,199 @@
+/**
+ * Styling for the summarized roadmap component.
+ * Matches the original roadmap.ts design system with DHCW colors and Roboto font.
+ * Optimized for presentation slides with clean 3-column layout.
+ */
+
+.container {
+  background: #FFFFFF;
+  padding: 2rem;
+  font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue',
+    Arial, sans-serif;
+  color: #212B32;
+  max-width: 100%;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #12A3C9;
+  padding-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: #1B365D;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #5A6675;
+  margin: 0;
+  font-weight: 500;
+}
+
+.columnsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.column {
+  border: 1px solid #D8DDE0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.columnHeader {
+  padding: 1rem 1.25rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.columnHeader h2 {
+  margin: 0;
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+}
+
+.column-now {
+  background: #1B294A;
+}
+
+.column-next {
+  background: #325083;
+}
+
+.column-later {
+  background: #12A3C9;
+}
+
+.itemsList {
+  padding: 1rem;
+  flex: 1;
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+.item {
+  margin-bottom: 1rem;
+  padding: 0.875rem;
+  background: #F0F4F5;
+  border-radius: 0.5rem;
+  border: 1px solid #D8DDE0;
+  border-left: 3px solid #12A3C9;
+  page-break-inside: avoid;
+}
+
+.column-now .item {
+  border-left-color: #1B294A;
+}
+
+.column-next .item {
+  border-left-color: #325083;
+}
+
+.column-later .item {
+  border-left-color: #12A3C9;
+}
+
+.itemTitle {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1B365D;
+  line-height: 1.3;
+}
+
+.itemSummary {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #3A4453;
+  line-height: 1.5;
+}
+
+.footer {
+  text-align: center;
+  color: #9AA4B2;
+  font-size: 0.8rem;
+  border-top: 1px solid #D8DDE0;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Print styles for better PowerPoint export */
+@media print {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .columnsGrid {
+    gap: 0.75rem;
+  }
+
+  .itemsList {
+    max-height: none;
+  }
+
+  .item {
+    margin-bottom: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .itemTitle {
+    font-size: 0.88rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .itemSummary {
+    font-size: 0.78rem;
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1600px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .columnHeader h2 {
+    font-size: 1.25rem;
+  }
+
+  .itemTitle {
+    font-size: 0.9rem;
+  }
+
+  .itemSummary {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .columnsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .item {
+    margin-bottom: 0.8rem;
+  }
+}
