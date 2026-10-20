@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Pharmacy Summarized Roadmap</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #F0F4F5;
+            font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            color: #212B32;
+            padding: 1rem;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            background: #FFFFFF;
+            padding: 1.5rem;
+            max-width: 100%;
+            margin: 0 auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid #12A3C9;
+            padding-bottom: 0.8rem;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 0 0.3rem 0;
+            color: #1B365D;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 0.85rem;
+            color: #5A6675;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .columnsGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .column {
+            border: 1px solid #D8DDE0;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .columnHeader {
+            padding: 0.75rem 1rem;
+            color: #FFFFFF;
+            font-weight: 700;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .columnHeader h2 {
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: -0.25px;
+        }
+
+        .column-now {
+            background: #1B294A;
+        }
+
+        .column-next {
+            background: #325083;
+        }
+
+        .column-later {
+            background: #12A3C9;
+        }
+
+        .itemsList {
+            padding: 0.75rem;
+            flex: 1;
+            overflow: visible;
+        }
+
+        .item {
+            margin-bottom: 0.6rem;
+            padding: 0.6rem;
+            background: #F0F4F5;
+            border-radius: 0.5rem;
+            border-left: 3px solid #D8DDE0;
+            border: 1px solid #D8DDE0;
+            border-left: 3px solid #12A3C9;
+        }
+
+        .column-now .item {
+            border-left-color: #1B294A;
+        }
+
+        .column-next .item {
+            border-left-color: #325083;
+        }
+
+        .column-later .item {
+            border-left-color: #12A3C9;
+        }
+
+        .itemTitle {
+            margin: 0 0 0.3rem 0;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #1B365D;
+            line-height: 1.2;
+        }
+
+        .itemSummary {
+            margin: 0;
+            font-size: 0.7rem;
+            color: #3A4453;
+            line-height: 1.3;
+        }
+
+        .footer {
+            text-align: center;
+            color: #9AA4B2;
+            font-size: 0.75rem;
+            border-top: 1px solid #D8DDE0;
+            padding-top: 0.75rem;
+            margin-top: 0.75rem;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 1024px) {
+            .columnsGrid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Choose Pharmacy Roadmap</h1>
+        </header>
+
+        <div class="columnsGrid">
+            <!-- NOW Column -->
+            <div class="column">
+                <div class="columnHeader column-now">
+                    <h2>Now</h2>
+                </div>
+                <div class="itemsList">
+                    <div class="item">
+                        <h3 class="itemTitle">Platform and Security</h3>
+                        <p class="itemSummary">Modern cloud-based, secure and reliable platform for Choose Pharmacy</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Pharmacy Hub</h3>
+                        <p class="itemSummary">Centralised hub with services, messages, tasks, and operational information</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Patient Search/Add Patient</h3>
+                        <p class="itemSummary">Patient identification via CDR integration with manual add functionality</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Patient Hub</h3>
+                        <p class="itemSummary">Consolidated patient view with history, allergies, and adverse reactions</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Clinical Services</h3>
+                        <p class="itemSummary">Digital workflows for NHS commissioned services (CCM, CAS, STTT, UTI, EMS, CS, DMR)</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">User Management</h3>
+                        <p class="itemSummary">Role-based access controls (RBAC) and user profile management</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Reporting</h3>
+                        <p class="itemSummary">Core operational reports and statistics for pharmacy teams</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Clinical Coding (SNOMED CT)</h3>
+                        <p class="itemSummary">Standardised clinical coding functionality for data quality</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Medication Coding (DM+D)</h3>
+                        <p class="itemSummary">Dictionary of Medicines and Devices coding for safe medicines management</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEXT Column -->
+            <div class="column">
+                <div class="columnHeader column-next">
+                    <h2>Next</h2>
+                </div>
+                <div class="itemsList">
+                    <div class="item">
+                        <h3 class="itemTitle">Welsh Immunisation Service (WIS)</h3>
+                        <p class="itemSummary">Integration to view vaccine eligibility and deliver vaccination services</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Clinical Data Repository (CDR)</h3>
+                        <p class="itemSummary">Store consultation data as coded information in the national Care Data Repository</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Discharge Medicines Review (DMR)</h3>
+                        <p class="itemSummary">Enhanced DMR functionality with import of discharge medicines from SMR</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Sodium Valproate Forms</h3>
+                        <p class="itemSummary">Structured monitoring and risk acknowledgement forms for safer prescribing</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Data Dashboards</h3>
+                        <p class="itemSummary">Rich, role-tailored data dashboards for insights and performance monitoring</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LATER Column -->
+            <div class="column">
+                <div class="columnHeader column-later">
+                    <h2>Later</h2>
+                </div>
+                <div class="itemsList">
+                    <div class="item">
+                        <h3 class="itemTitle">Appointment Booking</h3>
+                        <p class="itemSummary">Digital appointment booking system for NHS commissioned services</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">NHS 111 Integration</h3>
+                        <p class="itemSummary">Seamless sharing of referral information between NHS 111 and Choose Pharmacy</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">NHS Wales App Integration</h3>
+                        <p class="itemSummary">Enable patients to book appointments and make nominations via NHS Wales App</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Yellowcard Reporting</h3>
+                        <p class="itemSummary">Integration with Yellowcard system for reporting adverse drug reactions</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Clinical Template Expansion</h3>
+                        <p class="itemSummary">Additional clinical templates based on data and user research</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Common Symptoms Quick Picks</h3>
+                        <p class="itemSummary">Quick pick system for common symptoms to streamline consultations</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Electronic Prescribing Service (EPS)</h3>
+                        <p class="itemSummary">Send prescriptions via EPS to reduce manual administration</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">Patient Medication Record (PMR)</h3>
+                        <p class="itemSummary">Share consultation information with pharmacy PMR systems for dispensing</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="itemTitle">GP System Writeback</h3>
+                        <p class="itemSummary">Direct clinically coded consultation information to GP systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Updated September 2026 • Choose Pharmacy Team, DHCW</p>
+        </footer>
+    </div>
+</body>
+</html>
